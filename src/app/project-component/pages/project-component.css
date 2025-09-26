@@ -94,6 +94,12 @@ body {
     background-position: center;
 }
 
+
+.projectLinks {
+    display: flex;
+    justify-content: space-between;
+}
+
 @media (max-width: 768px) {
 
     .projectSection {
