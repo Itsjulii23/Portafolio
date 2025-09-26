@@ -1,5 +1,10 @@
 body {
     font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    width: 100%;
 }
 
 .contactTitle {
@@ -53,7 +58,6 @@ body {
     font-size: 1rem;
     outline: none;
     box-sizing: border-box;
-    /* ✅ asegura que padding no rompa el ancho */
 }
 
 .formGroup input:focus,
@@ -62,14 +66,12 @@ body {
 }
 
 .contactButton {
-    width: 100%;
-    /* ✅ ocupa el mismo ancho que los inputs */
+    width: 95%;
     background-color: lightgrey;
     color: black;
     font-weight: 600;
     border: none;
     padding: 0.9rem 1rem;
-    /* ✅ igual que inputs */
     border-radius: 0.5rem;
     cursor: pointer;
     transition: background 0.3s ease, transform 0.2s ease;
@@ -78,4 +80,17 @@ body {
 .contactButton:hover {
     background-color: #d1d5db;
     transform: translateY(-2px);
+}
+
+@media (max-width: 480px) {
+    .contactSection {
+        padding: 1.5rem 1rem;
+    }
+
+    .formGroup input,
+    .formGroup textarea,
+    .contactButton {
+        font-size: 0.95rem;
+        padding: 0.75rem 0.9rem;
+    }
 }

@@ -1,12 +1,12 @@
-/* BODY */
 body {
     font-family: 'Poppins', sans-serif;
-    margin: 0;
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
     overflow-x: hidden;
+    width: 100%;
 }
 
-/* HEADER */
 .headerSection {
     display: flex;
     justify-content: space-between;
@@ -30,7 +30,6 @@ body {
     color: #024398;
 }
 
-/* Menú desktop */
 .menuLinks {
     display: flex;
 }
@@ -53,7 +52,6 @@ body {
     transform: scale(1.1);
 }
 
-/* Botón hamburguesa */
 .hamburger {
     display: none;
     font-size: 2rem;
@@ -62,24 +60,27 @@ body {
     z-index: 1100;
 }
 
-/* Menú móvil (desplegable) */
 .mobileMenu {
     position: fixed;
     top: -100%;
     left: 0;
-    width: 100%;
+    right: 0;
     background-color: #024398;
     color: white;
-    padding: 2rem;
+    padding: 2rem 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     transition: top 0.3s ease-in-out;
-    z-index: 1000;
+    z-index: 1;
+    box-sizing: border-box
 }
+
 
 .mobileMenu.open {
     top: 0;
+    bottom: 0;
 }
 
 .mobileMenu ul {
@@ -103,7 +104,6 @@ body {
     color: white;
 }
 
-/* INTRODUCCIÓN */
 .introductionSection {
     display: flex;
     flex-direction: column;
@@ -124,7 +124,6 @@ body {
     padding: 0 1rem;
 }
 
-/* RESPONSIVE */
 @media (max-width: 768px) {
     .menuLinks {
         display: none;

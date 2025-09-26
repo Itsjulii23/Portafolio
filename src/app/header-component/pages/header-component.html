@@ -1,3 +1,4 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <link
   href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
   rel="stylesheet"
@@ -13,7 +14,7 @@
       <div class="hamburger" (click)="toggleMenu()">&#9776;</div>
       <div class="menuLinks">
         <ul class="ulLinks">
-          <li (click)="scrollTo('about')">Sobre mi</li>
+          <li (click)="scrollTo('about')">Sobre mí</li>
           <li (click)="scrollTo('experience')">Experiencia</li>
           <li (click)="scrollTo('projects')">Proyectos</li>
           <li (click)="scrollTo('contact')">Contacto</li>
@@ -24,7 +25,7 @@
     <nav class="mobileMenu" [class.open]="menuOpen">
       <div class="closeBtn" (click)="toggleMenu()">✖</div>
       <ul>
-        <li (click)="scrollTo('about'); toggleMenu()">Sobre mi</li>
+        <li (click)="scrollTo('about'); toggleMenu()">Sobre mí</li>
         <li (click)="scrollTo('experience'); toggleMenu()">Experiencia</li>
         <li (click)="scrollTo('projects'); toggleMenu()">Proyectos</li>
         <li (click)="scrollTo('contact'); toggleMenu()">Contacto</li>

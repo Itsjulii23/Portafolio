@@ -1,31 +1,68 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
 body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
     font-family: 'Poppins', sans-serif;
 }
 
 .experienceTitle {
     text-align: center;
     color: #024398;
-
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-top: 2rem;
 }
 
 .experienceContent {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
     background-color: #024398;
     margin: 2rem auto;
-    padding: 2rem;
-    width: 90%;
+    padding: 2rem 1.25rem;
+    width: 100%;
     max-width: 800px;
     border-radius: 10px;
-}
-
-
-h2 {
     color: white;
 }
 
-li {
+.experienceContent h2 {
     color: white;
+    margin-bottom: 1rem;
+}
+
+.experienceContent ul {
+    list-style: disc inside;
+    padding-left: 1rem;
+}
+
+.experienceContent li {
+    margin-bottom: 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+@media (max-width: 480px) {
+    .experienceContent {
+        padding: 1.5rem 1rem;
+    }
+
+    .experienceTitle {
+        font-size: 1.5rem;
+    }
+
+    .experienceContent h2 {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    .experienceContent li {
+        font-size: 0.95rem;
+    }
 }
