@@ -1,0 +1,81 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.contactTitle {
+    text-align: center;
+    color: #024398;
+}
+
+.contactSection {
+    max-width: 600px;
+    margin: 3rem auto;
+    padding: 2.5rem;
+    background-color: #024398;
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    color: white;
+    text-align: center;
+}
+
+.contactTitle {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    font-weight: 600;
+}
+
+.contactForm {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.formGroup {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.formGroup label {
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    font-size: 0.95rem;
+}
+
+.formGroup input,
+.formGroup textarea {
+    width: 100%;
+    padding: 0.9rem 1rem;
+    border-radius: 0.5rem;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    outline: none;
+    box-sizing: border-box;
+    /* ✅ asegura que padding no rompa el ancho */
+}
+
+.formGroup input:focus,
+.formGroup textarea:focus {
+    box-shadow: 0 0 0 2px #e5e7eb, 0 0 0 4px #60a5fa;
+}
+
+.contactButton {
+    width: 100%;
+    /* ✅ ocupa el mismo ancho que los inputs */
+    background-color: lightgrey;
+    color: black;
+    font-weight: 600;
+    border: none;
+    padding: 0.9rem 1rem;
+    /* ✅ igual que inputs */
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.contactButton:hover {
+    background-color: #d1d5db;
+    transform: translateY(-2px);
+}

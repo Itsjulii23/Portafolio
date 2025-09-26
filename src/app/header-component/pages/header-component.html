@@ -1,0 +1,41 @@
+<link
+  href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+  rel="stylesheet"
+/>
+
+<body>
+  <header>
+    <section class="headerSection">
+      <div class="nameSurname">
+        <img src="img/photo.jpg" alt="mi foto" />
+        <h2>Julian Campillos</h2>
+      </div>
+      <div class="hamburger" (click)="toggleMenu()">&#9776;</div>
+      <div class="menuLinks">
+        <ul class="ulLinks">
+          <li (click)="scrollTo('about')">Sobre mi</li>
+          <li (click)="scrollTo('experience')">Experiencia</li>
+          <li (click)="scrollTo('projects')">Proyectos</li>
+          <li (click)="scrollTo('contact')">Contacto</li>
+        </ul>
+      </div>
+    </section>
+
+    <nav class="mobileMenu" [class.open]="menuOpen">
+      <div class="closeBtn" (click)="toggleMenu()">✖</div>
+      <ul>
+        <li (click)="scrollTo('about'); toggleMenu()">Sobre mi</li>
+        <li (click)="scrollTo('experience'); toggleMenu()">Experiencia</li>
+        <li (click)="scrollTo('projects'); toggleMenu()">Proyectos</li>
+        <li (click)="scrollTo('contact'); toggleMenu()">Contacto</li>
+      </ul>
+    </nav>
+
+    <section class="introductionSection">
+      <span>Desarrollador Web</span>
+      <h2>
+        La programación es mi forma de transformar el mundo digital en posibilidades infinitas
+      </h2>
+    </section>
+  </header>
+</body>

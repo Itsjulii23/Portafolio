@@ -1,0 +1,42 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.aboutMeTitle {
+    color: #024398;
+    text-align: center;
+}
+
+.aboutMe {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #024398;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 1rem;
+    border: #024398 solid 1px;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+
+.aboutMeContent {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 1rem;
+}
+
+.aboutMeContent img {
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.aboutMeContent p {
+    color: white;
+    font-size: 1.2rem;
+}

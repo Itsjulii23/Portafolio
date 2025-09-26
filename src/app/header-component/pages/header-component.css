@@ -1,0 +1,140 @@
+/* BODY */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+/* HEADER */
+.headerSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+.nameSurname {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.nameSurname img {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+}
+
+.headerSection h2 {
+    color: #024398;
+}
+
+/* Menú desktop */
+.menuLinks {
+    display: flex;
+}
+
+.ulLinks {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0;
+    color: #024398;
+}
+
+.ulLinks li {
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.ulLinks li:hover {
+    transform: scale(1.1);
+}
+
+/* Botón hamburguesa */
+.hamburger {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #024398;
+    z-index: 1100;
+}
+
+/* Menú móvil (desplegable) */
+.mobileMenu {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    background-color: #024398;
+    color: white;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: top 0.3s ease-in-out;
+    z-index: 1000;
+}
+
+.mobileMenu.open {
+    top: 0;
+}
+
+.mobileMenu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.mobileMenu li {
+    margin: 1rem 0;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+.mobileMenu .closeBtn {
+    font-size: 2rem;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+/* INTRODUCCIÓN */
+.introductionSection {
+    display: flex;
+    flex-direction: column;
+}
+
+.introductionSection span {
+    text-align: center;
+    color: #024398;
+    font-size: 2rem;
+}
+
+.introductionSection h2 {
+    text-align: center;
+    color: #024398;
+    font-size: 4rem;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    padding: 0 1rem;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .menuLinks {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .introductionSection h2 {
+        font-size: 2rem;
+    }
+}

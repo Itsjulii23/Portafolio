@@ -1,0 +1,99 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.projectTitle h1 {
+    text-align: center;
+    color: #024398;
+}
+
+.projectSection {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    justify-content: center;
+    padding: 2rem;
+    max-width: max-content;
+    margin: 0 auto;
+}
+
+.projectCard {
+    max-width: 300px;
+    border-radius: 0.5rem;
+    background-color: #024398;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    border: 1px solid transparent;
+}
+
+.projectCard a {
+    text-decoration: none;
+}
+
+.projectContent {
+    padding: 1.1rem;
+}
+
+.projectImage {
+    width: 100%;
+    height: 150px;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.projectImage img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.projectTitle {
+    color: white;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    font-weight: 600;
+}
+
+.projectDescription {
+    margin-top: 0.5rem;
+    color: white;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+}
+
+.projectSee {
+    display: inline-flex;
+    margin-top: 1rem;
+    color: black;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 500;
+    align-items: center;
+    gap: 0.25rem;
+    background-color: lightgrey;
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+.projectSee span {
+    transition: .3s ease;
+}
+
+.projectSee:hover span {
+    transform: translateX(4px);
+}
+
+.projectImage img:not([src]) {
+    background-color: #f0f0f0;
+    background-image: url('/img/Home2.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+@media (max-width: 768px) {
+
+    .projectSection {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+}
